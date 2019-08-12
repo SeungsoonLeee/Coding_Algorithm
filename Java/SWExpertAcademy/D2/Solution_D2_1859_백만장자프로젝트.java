@@ -21,7 +21,7 @@ import java.io.FileNotFoundException;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Solution_D2_1859_백만장자프로젝트 {
+public class Solution {
 	public static void main(String[] args) throws FileNotFoundException {
 		Scanner sc = new Scanner(System.in);
 		int T = sc.nextInt();
