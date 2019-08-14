@@ -1,12 +1,9 @@
-package com.ssafy.step1.homework;
-
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Solution_D3_1244_최대상금_이승순 {
+public class Solution {
 	static int ans;
 	static String str;
 	static int[] nums;
@@ -14,7 +11,6 @@ public class Solution_D3_1244_최대상금_이승순 {
 	static boolean[][] checked;
 
 	public static void main(String[] args) throws NumberFormatException, IOException {
-		System.setIn(new FileInputStream("input2.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		int T = Integer.parseInt(br.readLine());
 		for (int test_case = 1; test_case <= T; test_case++) {
@@ -39,7 +35,6 @@ public class Solution_D3_1244_최대상금_이승순 {
 			int temp = arrToNum(nums);
 			if (ans < temp)
 				ans = temp;
-			System.out.println(temp);
 			return;
 		}
 
@@ -71,14 +66,3 @@ public class Solution_D3_1244_최대상금_이승순 {
 		return Integer.parseInt(num);
 	}
 }
-
-// #1 321
-// #2 7732
-// #3 857147
-// #4 87664
-// #5 88832
-// #6 777770
-// #7 966354
-// #8 954311
-// #9 332211
-// #10 987645
