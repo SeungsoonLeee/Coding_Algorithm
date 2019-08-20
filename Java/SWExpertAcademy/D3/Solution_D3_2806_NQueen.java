@@ -4,7 +4,8 @@ public class Solution {
 	static int N;
 	static int ans;
 	static boolean[] checkedCol;
-	static int[][] diagonalMap;
+	static boolean[] diagonalRD;
+	static boolean[] diagonalLD;
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -14,7 +15,8 @@ public class Solution {
 			ans = 0;
 			N = sc.nextInt();
 			checkedCol = new boolean[N];
-			diagonalMap = new int[N][N];
+			diagonalRD = new boolean[2 * N];
+			diagonalLD = new boolean[2 * N];
 
 			dfs(0);
 
@@ -28,30 +30,10 @@ public class Solution {
 			return;
 		}
 		for (int col = 0; col < N; col++) {
-			if (!checkedCol[col] && diagonalMap[row][col] == 0) {
-				checkedCol[col] = true;
-				int tempR = row;
-				int tempC = col;
-				while (tempR < N && tempC >= 0) { // 왼쪽 아래 대각선
-					diagonalMap[tempR++][tempC--] += 1;
-				}
-				tempR = row;
-				tempC = col;
-				while (tempR < N && tempC < N) { // 오른쪽 아래 대각선
-					diagonalMap[tempR++][tempC++] += 1;
-				}
+			if (!checkedCol[col] && !diagonalRD[row - col + N] && !diagonalLD[row + col]) {
+				checkedCol[col] = diagonalRD[row - col + N] = true;
 				dfs(row + 1);
-				checkedCol[col] = false;
-				tempR = row;
-				tempC = col;
-				while (tempR < N && tempC >= 0) { // 왼쪽 아래 대각선
-					diagonalMap[tempR++][tempC--] -= 1;
-				}
-				tempR = row;
-				tempC = col;
-				while (tempR < N && tempC < N) { // 오른쪽 아래 대각선
-					diagonalMap[tempR++][tempC++] -= 1;
-				}
+				checkedCol[col] = diagonalRD[row - col + N] = false;
 			}
 		}
 	}
