@@ -1,9 +1,7 @@
-package com.ssafy.solve;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Main_1863_종교_이승순 {
+public class Main {
 	static int N, M, ans;
 	static int[] parent;
 
