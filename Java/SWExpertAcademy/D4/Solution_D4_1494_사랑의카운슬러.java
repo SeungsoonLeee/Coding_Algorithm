@@ -1,7 +1,3 @@
-package com.ssafy.solve;
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -9,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Solution_D4_1494_사랑의카운슬러_이승순 {
+public class Solution {
 	static int N;
 	static Worm[] worms;
 	static int[] nums;
@@ -17,8 +13,7 @@ public class Solution_D4_1494_사랑의카운슬러_이승순 {
 	static long totalSumY;
 	static long ans;
 
-	public static void main(String[] args) throws FileNotFoundException {
-		System.setIn(new FileInputStream("input2.txt"));
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int T = sc.nextInt();
 		for (int test_case = 1; test_case <= T; ++test_case) {

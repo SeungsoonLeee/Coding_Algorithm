@@ -1,22 +1,17 @@
-package com.ssafy.solve;
-
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class Solution_D4_1258_행렬찾기_이승순 {
+public class Solution {
 	static int N;
 	static int[][] matrix;
 	static boolean[][] check;
 	static int[][] dir = { { 1, 0 }, { 0, 1 } };
 	static ArrayList<RC> list;
 
-	public static void main(String[] args) throws FileNotFoundException {
-		System.setIn(new FileInputStream("input.txt"));
+	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int T = sc.nextInt();
 		for (int test_case = 1; test_case <= T; ++test_case) {
