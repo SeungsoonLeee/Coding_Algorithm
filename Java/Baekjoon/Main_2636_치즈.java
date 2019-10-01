@@ -34,9 +34,6 @@ public class Main_2636_치즈 {
 //			System.out.println();
 		}
 
-		int tempR;
-		int tempC;
-		boolean isNotside;
 		while (totalCheese > 0) {
 			bfs(0, 0);
 		}
