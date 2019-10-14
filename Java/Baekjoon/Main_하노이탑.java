@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
-public class 하노이탑 {
+public class Main_하노이탑 {
 	static int cnt = 0;
 	static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
