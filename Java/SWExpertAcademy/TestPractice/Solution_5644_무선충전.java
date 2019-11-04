@@ -70,13 +70,6 @@ public class Solution {
 				}
 			}
 
-//			for (int i = 0; i < 10; i++) {
-//				for (int j = 0; j < 10; j++) {
-//					System.out.print(map[i][j] + " ");
-//				}
-//				System.out.println();
-//			}
-
 			int Ar = 0;
 			int Ac = 0;
 			int Br = 9;
@@ -88,7 +81,6 @@ public class Solution {
 				Br += dir[moveB[i]][0];
 				Bc += dir[moveB[i]][1];
 				calCharge(Ar, Ac, Br, Bc);
-//				System.out.println(Ar + " " + Ac + " " + Br + " " + Bc + " ");
 			}
 
 			bw.write("#" + test_case + " " + ans + "\n");
@@ -156,10 +148,5 @@ class BC {
 		this.c = c;
 		this.d = d;
 		this.w = w;
-	}
-
-	@Override
-	public String toString() {
-		return "BC [r=" + r + ", c=" + c + ", d=" + d + ", w=" + w + "]";
 	}
 }
