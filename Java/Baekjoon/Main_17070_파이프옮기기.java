@@ -1,12 +1,9 @@
-package com.ssafy.baekjoon;
-
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main_17070_파이프옮기기_이승순 {
+public class Main {
 	static int N;
 	static int[][] map;
 	static int[][][] dir = { { { 0, 1 } } // 가로일때 확인할 좌표
@@ -15,7 +12,6 @@ public class Main_17070_파이프옮기기_이승순 {
 	static int ans;
 
 	public static void main(String[] args) throws IOException {
-		System.setIn(new FileInputStream("input2.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = null;
 		N = Integer.parseInt(br.readLine());
