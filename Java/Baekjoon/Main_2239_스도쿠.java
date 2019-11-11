@@ -1,19 +1,15 @@
-package com.ssafy.baekjoon;
-
 import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class Main_2239_스도쿠_이승순 {
+public class Main {
 	static int[][] map;
 	static boolean isComplete;
 	static ArrayList<Point> zeroPlace;
 	static int N = 9;
 
 	public static void main(String[] args) throws IOException {
-		System.setIn(new FileInputStream("input.txt"));
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		map = new int[N][N];
 		zeroPlace = new ArrayList<Point>();
