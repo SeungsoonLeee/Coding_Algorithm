@@ -23,7 +23,7 @@ public class Main {
 					zeroPlace.add(new Point(i, j));
 //				System.out.print(map[i][j] + " ");
 			}
-//			System.out.println();
+//			System.out.println(); 
 		}
 
 		dfs(0);
